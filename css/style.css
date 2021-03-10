@@ -3,7 +3,7 @@
 
 
 * {
-    box-sizing: border;
+    box-sizing: border-box;
 }
 
 body {
@@ -19,9 +19,7 @@ img {
 
 .container {
     width: 95%;
-    max-width: 70em;
     margin: 0 auto;
-
 }
 
 
@@ -29,17 +27,19 @@ img {
 
 h1 {
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+    font-weight: 900;
+    margin-top: .5em;
 }
 
 .title {
     font-size: 2.5rem;
     margin-bottom: 1.5em;
-    padding-top: .5em;
 }
 
 .title span {
-    font-family: 'dancing';
+
     font-weight: 300;
     display: block;
     font-size: .9em;
@@ -141,11 +141,46 @@ nav a:focus {
     }
 }
 
-/* .home-about-textbox {
-  background-color:#232323;
-  padding: 3em;
-  width: 100vw;
-  margin-left: -2.5%;
-  outline: 2px solid #00ff6c;
-  outline-offset: -2.5em;
-} */
+.home-about-textbox {
+    background-color: #232323;
+    padding: 4em;
+    width: 105.2%;
+    margin-left: -2.6%;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+}
+
+.home-about-textbox h1 {
+    color: #00ff6c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: .75em;
+    background: #232323;
+    padding: 0 .145em;
+}
+
+@media (min-width: 25rem) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-about-textbox h1 {
+        top: .5em;
+        padding: 0 .325em;
+    }
+}
+
+
+@media (min-width: 60rem) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .home-about-textbox h1 {
+        top: .3em;
+        padding: 0 .6em;
+    }
+}
