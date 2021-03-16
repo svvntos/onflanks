@@ -150,7 +150,7 @@ nav a:focus {
     }
 }
 
-.home-about-textbox {
+.home-about-textbox, .home-about-textbox2  {
     background-color: #232323;
     padding: 4em;
     width: 105.2%;
@@ -161,7 +161,8 @@ nav a:focus {
     position: relative;
 }
 
-.home-about-textbox h1 {
+
+.home-about-textbox h1,.home-about-textbox2 h1 {
     color: #00ff6c;
     position: absolute;
     left: 50%;
@@ -176,7 +177,7 @@ nav a:focus {
         font-size: 1.5rem;
     }
 
-    .home-about-textbox h1 {
+    .home-about-textbox h1,.home-about-textbox2 h1 {
         top: .5em;
         padding: 0 .325em;
     }
@@ -184,6 +185,15 @@ nav a:focus {
 
 
 @media (min-width: 60rem) {
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .title {
+        font-size: 3.7rem;
+    }
+
     h1 {
         font-size: 1.7rem;
     }
@@ -196,20 +206,36 @@ nav a:focus {
         
     }
 
-    .home-about-textbox {
+    .home-about2 {
+        background-image: url(/onflanks-portfolio/img/what-we-do.png);
+        background-repeat: no-repeat;
+        background-position-x: left;
+        padding-top: 10em;
+        margin-top: -10em;
+        
+    }
+
+    .home-about-textbox, .home-about-textbox2 {
         width: 50%;
         padding: 7em;
         outline-offset: -2.5em;
-        margin-left: -2.5%;
+        margin-left: -2%;
         top: -6em;
         text-align: left;
         box-shadow: 0 0 4em 0 rgb(0,0,0,.25);
     }
+    
+    .home-about-textbox2 {
+        margin-left: 45%;
+        top: -15em;
+        text-align: right;
+    }
 
-    .home-about-textbox h1 {
+    .home-about-textbox h1, .home-about-textbox2 h1 {
         top: .3em;
-        left: 20rem;
+        left: 14rem;
         transform: translateX(0s);
         padding: 0 .6em;
+        text-align: center;
     }
 }
