@@ -239,3 +239,43 @@ nav a:focus {
         text-align: center;
     }
 }
+
+/* Portfolio */
+
+.port-item {
+    animation: swing ease-in-out 1.8s infinite alternate;
+    transform-origin: center -25px;
+    float: left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-left: 4rem;
+}
+.port-item img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.port-item:after {
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.port-item:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
