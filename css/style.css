@@ -23,6 +23,11 @@ img {
     margin: 0 auto;
 }
 
+.breaker {
+     color: #232323;
+     border: 1px solid;
+     margin-bottom: 50px;
+ }
 
 /* typography =============================================================*/
 
@@ -73,6 +78,16 @@ p:last-of-type {
     color:#fff;
 }
 
+@media (min-width: 60rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+.button-small {
+    font-size: .6rem;
+}
+
 .button-accent {
     color: #00ff6c;
     border-color: #00ff6c;
@@ -84,11 +99,7 @@ p:last-of-type {
     color: #232323;
 }
 
-@media (min-width: 60rem) {
-    .button {
-        font-size: 1.5rem;
-    }
-}
+
 /* header =============================================================*/
 
 header {
@@ -246,18 +257,19 @@ nav a:focus {
     animation: swing ease-in-out 1.8s infinite alternate;
     transform-origin: center -25px;
     float: left;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px #232323;
     margin-left: 4rem;
 }
 .port-item img {
-    border: 5px solid #f8f8f8;
+ 
+    outline: 5px solid #232323;
     display: block;
 }
 .port-item:after {
     content: '';
     position: absolute;  
     width: 20px; height: 20px;  
-    border: 1px solid #999;
+    border: 1px solid #00ff6c;
     top: -10px; left: 50%;
     z-index: 0;
     border-bottom: none;
