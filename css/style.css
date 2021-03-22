@@ -252,6 +252,34 @@ nav a:focus {
 }
 
 /* Portfolio */
+@media (max-width: 89.9rem) {
+.portfolio {
+    margin: 3em 0;
+}
+
+.port-item {
+    margin: 0;
+    position: relative;
+}
+
+
+.port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 2em;
+    left: 5em;
+    right: 5em;
+    color: white;
+    background: rgba(0,0,0,.75);
+    padding: 1em;
+}
+
+.port-desc p {
+    margin: 1em;
+}
+}
+
+
 @media (min-width: 90rem) {
 .port-item {
     font-family: 'Fauna One', Arial, sans-serif;
@@ -334,3 +362,4 @@ nav a:focus {
     opacity: 1;
   }
 }
+
