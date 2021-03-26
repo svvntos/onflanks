@@ -293,7 +293,7 @@ nav a:focus {
     }
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 65rem) {
     .port-item {
         width: 33.3333334%;
         overflow: hidden ;
