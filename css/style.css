@@ -357,6 +357,7 @@ nav a:focus {
 }
 .social .fab {
     color: #00ff6c;
+    padding: 0;
     cursor: pointer;
     text-align: center;
     padding: 00.5rem;
