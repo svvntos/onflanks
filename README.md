@@ -26,11 +26,10 @@ npm i
 
 # Tests
 Run the Tests with This Snippet
-```
 
 # Usage
 <br />
-Simple outline of a website using HTML & CSS/JS
+Simple outline of a website using HTML & CSS/Sass
 
 # Contributing
 <br />
